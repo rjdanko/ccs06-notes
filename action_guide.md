@@ -18,3 +18,43 @@ CREATE TABLE `fin_RALM_user` (
   CONSTRAINT `chk_status_range`
     CHECK (`status` IN (1, 2, 3))
 );
+
+
+Code to change textbox in _form.php:
+	<div class="row">
+		<?php echo $form->labelEx($model,'gender'); ?>
+		<?php echo $form->radioButtonList($model,'gender', array(
+			1 => 'Male',
+			2 => 'Female',
+		), array('separator' => ' ')); ?>
+		<?php echo $form->error($model,'gender'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'dob'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+			'name' => CHtml::activeName($model, 'dob'),
+			'value' => $model->dob,
+			'options' => array(
+				'dateFormat' => 'yy-mm-dd',
+				'changeMonth' => true,
+				'changeYear' => true,
+			),
+			'htmlOptions' => array(
+				'size' => 20,
+				'maxlength' => 10,
+			),
+		)); ?>
+		<?php echo $form->error($model,'dob'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'status'); ?>
+		<?php echo $form->dropDownList($model,'status', array(
+			1 => 'Active',
+			2 => 'Inactive',
+			3 => 'Deleted',
+		), array('prompt' => 'Select status')); ?>
+		<?php echo $form->error($model,'status'); ?>
+	</div>
+
