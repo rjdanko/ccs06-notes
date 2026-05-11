@@ -6,9 +6,9 @@ CREATE TABLE `fin_RALM_user` (
   `firstname`  VARCHAR(255) NOT NULL,
   `middlename` VARCHAR(255)          DEFAULT NULL,
   `lastname`   VARCHAR(255) NOT NULL,
-  `gender`     TINYINT(1)   NOT NULL,
+  `gender`     INT(1)       NOT NULL,
   `dob`        DATE         NOT NULL,
-  `status`     TINYINT(1)   NOT NULL DEFAULT 2,
+  `status`     INT(1)       NOT NULL DEFAULT 2,
 
   PRIMARY KEY (`id`),
 
