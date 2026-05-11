@@ -1,0 +1,16 @@
+2026/05/11 06:52:37 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "finRalmUser/create". in C:\xampp\htdocs\yii-1.1.32.e7728e\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.32.e7728e\framework\web\CWebApplication.php(141): CWebApplication->runController('finRalmUser/cre...')
+#1 C:\xampp\htdocs\yii-1.1.32.e7728e\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.finals_RALM.com\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.finals_RALM.com/index.php?r=finRalmUser/create
+---
+2026/05/11 06:52:40 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "fRalmUser/create". in C:\xampp\htdocs\yii-1.1.32.e7728e\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.32.e7728e\framework\web\CWebApplication.php(141): CWebApplication->runController('fRalmUser/creat...')
+#1 C:\xampp\htdocs\yii-1.1.32.e7728e\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\www.finals_RALM.com\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/www.finals_RALM.com/index.php?r=fRalmUser/create
+---
