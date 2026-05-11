@@ -26,7 +26,10 @@ Code to change textbox in _form.php:
 		<?php echo $form->radioButtonList($model,'gender', array(
 			1 => 'Male',
 			2 => 'Female',
-		), array('separator' => ' ')); ?>
+		), array(
+			'separator' => ' ',
+			'labelOptions' => array('style' => 'display:inline; font-weight:normal;'),
+		)); ?>
 		<?php echo $form->error($model,'gender'); ?>
 	</div>
 
